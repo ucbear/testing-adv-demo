@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.demo.testing.basics"
@@ -19,16 +19,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
     testImplementation 'junit:junit:4.13.2'
@@ -37,6 +32,6 @@ dependencies {
     testImplementation "org.hamcrest:hamcrest-library:$hamcrest_version"  // transition from 1.3
 
     // Mockito
-    def mockito_version = "3.5.5"
+    def mockito_version = "3.10.0"
     testImplementation "org.mockito:mockito-core:$mockito_version"
 }
