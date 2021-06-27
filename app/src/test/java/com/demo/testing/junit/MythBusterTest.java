@@ -32,12 +32,13 @@ public class MythBusterTest {
     public void test_remove() {
         // Arrange (Given)
         xs.add("Yellow");
+        xs.add("Hello");
 
         // Act (When)
         xs.remove("Yellow");
 
         // Assert (Then)
-        assertEquals(0, xs.size());
+        assertEquals(1, xs.size());
     }
 
 }
