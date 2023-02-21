@@ -1,9 +1,12 @@
 package com.demo.testing.calculator;
 
+import androidx.annotation.NonNull;
+
 import java.util.List;
 
-public class PriceCalculator {
+public abstract class PriceCalculator {
     private Timer timer;
+    private User user;
 
     public PriceCalculator(MetricFactory factory) {
         timer = factory.createTimer("PriceCalculator", "calculateTotalPrice");
@@ -15,7 +18,7 @@ public class PriceCalculator {
             double total = 0;
             boolean isVipUser = false;
 
-            User user = UserService.getUser(userId);
+            user = UserService.getUser(userId);
 
             if (user != null) {
                 for (Integer vipId : store.getVips()) {
@@ -46,4 +49,6 @@ public class PriceCalculator {
         }
     }
 
+    @NonNull
+    public abstract User getUser();
 }

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.demo.testing.matchers.CustomMatchersTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-21T01:01:29" hostname="DESKTOP-TBD2LUT" time="0.005">
-  <properties/>
-  <testcase name="givenAnOddInteger_whenNotDivisibleByTwo_thenCorrect" classname="com.demo.testing.matchers.CustomMatchersTest" time="0.005"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
