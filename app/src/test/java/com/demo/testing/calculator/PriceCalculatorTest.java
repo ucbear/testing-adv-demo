@@ -124,7 +124,7 @@ public class PriceCalculatorTest {
         }
 
         @NonNull
-        @Override
+//        @Override
         protected User getUser(int userId) {
             return returnedUser;
         }
